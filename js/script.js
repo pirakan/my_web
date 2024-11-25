@@ -31,5 +31,8 @@ navClass.addEventListener("click",() => {
 
 asideClose.addEventListener("click",() => {
   asideClass.style.display = "none";
-  window.addEventListener("scroll", () => {asideClass.style.display = "none";})
+});
+
+window.addEventListener("scroll", () => {
+	asideClass.style.display = "none";
 });
