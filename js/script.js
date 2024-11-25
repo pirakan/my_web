@@ -8,6 +8,7 @@ var typed = new Typed(".typing",{
 });
 
 const activeClass = document.querySelectorAll(".nav li a");
+const asideClass = document.querySelector(".aside");
 
 activeClass.forEach((item)=> {
 	item.addEventListener("click",() => {
@@ -16,12 +17,12 @@ activeClass.forEach((item)=> {
 	      elems.classList.remove("active");
 	    }
 		item.classList.add("active");
+		asideClass.style.display = "none";
 	});
 })
 
 
 const navClass = document.getElementsByTagName('nav')[0];
-const asideClass = document.querySelector(".aside");
 const asideClose = document.querySelector(".nav_close");
 
 navClass.addEventListener("click",() => {
