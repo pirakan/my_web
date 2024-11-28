@@ -365,6 +365,8 @@ h3.my-profession{
 }
 
 .about .about-content .personal-info{
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -796,15 +798,14 @@ h3.my-profession{
 		justify-content: flex-end;
 	}
 	.navv  i {
-		position: absolute;
 		margin: 10px;
-		float: left;
 	}
 	.aside{
 		display: none;
 		left: 0px;
 		backdrop-filter: blur(10px);
 		background: none;
+		border: none;
 	}
 	.aside .nav_close{
 		display: flex;
@@ -813,5 +814,7 @@ h3.my-profession{
 	.aside .logo{
 		margin-top: 20px;
 	}
-
+	.display{
+		display: none!important;
+	}
 }
