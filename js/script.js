@@ -17,7 +17,6 @@ activeClass.forEach((item)=> {
 	      elems.classList.remove("active");
 	    }
 		item.classList.add("active");
-		asideClass.classList.add ('display');
 	});
 })
 
