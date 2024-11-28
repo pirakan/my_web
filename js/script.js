@@ -17,10 +17,9 @@ activeClass.forEach((item)=> {
 	      elems.classList.remove("active");
 	    }
 		item.classList.add("active");
-		asideClass.style.display = "none";
+		asideClass.classList.add ('display');
 	});
 })
-
 
 const navClass = document.getElementsByTagName('nav')[0];
 const asideClose = document.querySelector(".nav_close");
@@ -31,8 +30,5 @@ navClass.addEventListener("click",() => {
 
 asideClose.addEventListener("click",() => {
   asideClass.style.display = "none";
-});
 
-window.addEventListener("scroll", () => {
-	asideClass.style.display = "none";
 });
