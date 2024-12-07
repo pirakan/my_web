@@ -25,6 +25,9 @@ const asideClose = document.querySelector(".nav_close");
 
 navClass.addEventListener("click",() => {
   asideClass.style.display = "flex";
+  	window.addEventListener("scroll", () => {
+		aside.style.display = "none";
+	});	
 });
 
 asideClose.addEventListener("click",() => {
