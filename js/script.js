@@ -9,6 +9,7 @@ var typed = new Typed(".typing",{
 
 const activeClass = document.querySelectorAll(".nav li a");
 const asideClass = document.querySelector(".aside");
+const aside = document.querySelector(".aside");
 
 activeClass.forEach((item)=> {
 	item.addEventListener("click",() => {
